@@ -1,0 +1,32 @@
+设计一个算法，计算出n阶乘中尾部零的个数
+
+class Solution {
+
+public:
+    /*
+ 
+            * @param n: A long integer
+   
+            * @return: An integer, denote the number of trailing zeros in n!
+     
+            */
+   
+      long long trailingZeros(long long n) {
+       
+           // write your code here, try to do it without arithmetic operators.
+       
+           long num = 0;
+    
+           while(n > 0) {
+         
+                num += n / 5;
+          
+                n /= 5;
+        
+             }
+      
+       return num;
+   
+ }
+
+};
